@@ -1,0 +1,14 @@
+services:
+  qdotml:
+    build: .
+    volumes:
+      - ./results:/work/results
+      - ./configs:/work/configs:ro
+    environment:
+      - PYTHONPATH=/work/src
+    command: python scripts/run_all.py
+  test:
+    build: .
+    environment:
+      - PYTHONPATH=/work/src
+    command: pytest -q

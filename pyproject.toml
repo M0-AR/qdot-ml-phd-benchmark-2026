@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qdotml"
+version = "1.0.0"
+description = "Reproducible ML benchmark for semiconductor quantum-dot tuning (DelftX Week 1-5)"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "scikit-learn", "matplotlib", "pyyaml", "requests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

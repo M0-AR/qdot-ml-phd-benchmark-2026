@@ -1,0 +1,75 @@
+{
+  "config": {
+    "seed": 7,
+    "grid": 96,
+    "n_devices_train": 24,
+    "n_devices_test": 8,
+    "patches_per_diagram": 40,
+    "patch_size": 28,
+    "noise_levels": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "tunnel_couplings_uev": [
+      5,
+      15,
+      30
+    ],
+    "tuning_runs": 120,
+    "tuning_max_steps": 120,
+    "khuizen_pca_gamma": 0.02,
+    "n_clusters": 3,
+    "hamiltonian_fits": 40
+  },
+  "W1_supervised": {
+    "line_mlp": {
+      "acc": 0.971875,
+      "f1_macro": 0.9697776720112543,
+      "auc": 0.9981266490089393,
+      "ece": 0.014873225738604863,
+      "mean_conf": 0.9849513173103333
+    },
+    "state_mlp": {
+      "acc": 0.8802083333333334,
+      "f1_macro": 0.7553713947630227,
+      "ece": 0.04746366931746405,
+      "mean_conf": 0.9271838515996933
+    },
+    "line_logreg_baseline": {
+      "acc": 0.9604166666666667,
+      "f1_macro": 0.9573977944727924,
+      "auc": 0.9951409173828276,
+      "ece": 0.023080167236427463,
+      "mean_conf": 0.9527536034584045
+    },
+    "folds": 4
+  },
+  "W2_autotune": {
+    "success_verify": 0.6166666666666667,
+    "success_no_verify": 0.6166666666666667,
+    "delta_uncertainty": 0.0,
+    "mean_steps_success": 11.14864864864865,
+    "mean_verifications": 0.08333333333333333,
+    "shifted_noise2_success_verify": 0.8666666666666667,
+    "shifted_noise2_success_no_verify": 0.8583333333333333,
+    "shifted_delta_uncertainty": 0.008333333333333415,
+    "shifted_mean_verifications": 0.18333333333333332
+  },
+  "W3_unsupervised": {
+    "ari_kmeans": 0.05608243333929833,
+    "nmi_kmeans": 0.12512429329277808,
+    "dbscan_clusters": 6,
+    "dbscan_noise_frac": 0.05,
+    "r_asym_vs_success": -0.017618062236190002,
+    "r_disorder_vs_success": -0.1121084294448041
+  },
+  "W4_hamiltonian": {
+    "mae_g": 0.06891030976789048,
+    "mare_T2": 0.16006902869152823,
+    "n_fits": 40
+  },
+  "elapsed_s": 43.82400989532471,
+  "live": "live-verified",
+  "notes": "Synthetic physics-grounded CSDs (QDarts/SimCATS-class model, from scratch). Public experimental sets (QDSD/QFlow) referenced via live_manifest; no financial market data involved \u2014 device tuning is verified on device data."
+}

@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-10-03T15:30:19.203392Z",
+  "checks": {
+    "qdsd_github_api": {
+      "url": "https://api.github.com/repos/3it-inpaqt/qdsd-dataset",
+      "http": 200,
+      "reachable": true,
+      "stars": 1,
+      "updated_at": "2025-02-13T22:42:11Z"
+    },
+    "nist_qflow_pdr": {
+      "url": "https://data.nist.gov/od/id/66492819760D3FF6E05324570681BA721894",
+      "http": 200,
+      "reachable": true
+    },
+    "qdarts_pypi": {
+      "url": "https://pypi.org/pypi/QDarts/json",
+      "http": 200,
+      "reachable": true,
+      "latest_version": "1.0.5"
+    },
+    "qdarts_github_api": {
+      "url": "https://api.github.com/repos/qplai/QDarts",
+      "http": 200,
+      "reachable": true,
+      "stars": 11,
+      "updated_at": "2026-07-16T08:18:10Z"
+    }
+  },
+  "status": "live-verified"
+}

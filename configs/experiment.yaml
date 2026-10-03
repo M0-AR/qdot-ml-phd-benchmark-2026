@@ -1,0 +1,13 @@
+seed: 7
+grid: 96
+n_devices_train: 24
+n_devices_test: 8
+patches_per_diagram: 40
+patch_size: 28
+noise_levels: [0.5, 1.0, 1.5]
+tunnel_couplings_uev: [5, 15, 30]
+tuning_runs: 120
+tuning_max_steps: 120
+khuizen_pca_gamma: 0.02
+n_clusters: 3
+hamiltonian_fits: 40
