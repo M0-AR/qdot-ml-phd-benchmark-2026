@@ -69,7 +69,7 @@
     "mare_T2": 0.16006902869152823,
     "n_fits": 40
   },
-  "elapsed_s": 43.82400989532471,
+  "elapsed_s": 19.022953987121582,
   "live": "live-verified",
   "notes": "Synthetic physics-grounded CSDs (QDarts/SimCATS-class model, from scratch). Public experimental sets (QDSD/QFlow) referenced via live_manifest; no financial market data involved \u2014 device tuning is verified on device data."
 }
